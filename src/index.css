@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura'), url('https://fonts.cdnfonts.com/s/15352/FuturaPTBook.woff') format('woff');
+}
+
+body {
+  @apply font-futura bg-gray-900 text-white;
+  background-image: url('https://comicbook.com/wp-content/uploads/sites/4/2025/04/Rick-and-Morty-Seaosn-8-Adult-Swim-Promo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 15, 0);
+  z-index: -1;
+}
